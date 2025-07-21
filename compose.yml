@@ -1,0 +1,11 @@
+services:
+  agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 4003:4003
+    env_file:
+      - .env
+    volumes:
+      - ./src:/app/src
