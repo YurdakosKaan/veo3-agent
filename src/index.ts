@@ -1,10 +1,7 @@
+import 'dotenv/config'
 import { z } from 'zod'
 import { Agent } from '@openserv-labs/sdk'
-import 'dotenv/config'
-import { setTimeout as sleep } from 'timers/promises'
-import fetch from 'node-fetch'
 import { GoogleGenAI } from "@google/genai"
-import { Readable } from "stream"
 import axios from 'axios'
 
 // Mock Gemini API response for development/testing
